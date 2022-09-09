@@ -13,7 +13,7 @@ label {
   font-weight: 300;
 }
 .header_two {
-  font-size: 60px;
+  font-size: 5vw;
   font-family: "montserrat";
   overflow: hidden;
   overflow-wrap: break-word;
@@ -111,7 +111,7 @@ span.subHeader-is {
   bottom: 20%;
 }
 .gallery {
-  height: 750px;
+  height: 60vw;
   padding-top: 30px;
   background: #7b614a;
 }
@@ -137,14 +137,14 @@ p.location-text {
 }
 .img_map {
   margin-top: 50px;
-  width: 60%;
+  width: 60vw;
   cursor: pointer;
 }
 .border-left {
   border-right: 2px solid #ffffff;
 }
 .checkIn {
-  height: 1200px;
+  height: 85%;
   padding: 30px;
   background: #f0efe6;
 }
@@ -226,15 +226,8 @@ label {
 span.color {
   color: #7b614a;
 }
-.img_checkin {
-  width: 200px;
-  height: 150px;
-  overflow: hidden;
-}
-.img_checkin img {
-  width: 400px;
-  height: 300px;
-  margin: -75px 0 0 -100px;
+img.img_checkin{
+  width: 30vw;
 }
 @import "~swiper/css";
 @import "~swiper/css/pagination";
@@ -314,4 +307,7 @@ input[type="checkbox"]:focus {
 }
 .swiper-pagination .swiper-pagination-bullet-active {
   background-color: black;
+}
+.content_img{
+  height: 50vh;
 }

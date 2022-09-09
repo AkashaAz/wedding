@@ -1,21 +1,3 @@
-<!-- <div class="cover">
-  <div class="cover_filter">
-    <div class="container">
-      <div class="cover_logo">
-        <img src="/assets/images/Logo_Final-02.png" alt="Logo_Final-02" />
-      </div>
-      <div class="cover_text">
-        <div class="header">NEXT STATION</div>
-        <div class="subHeader mb-3">
-          <span class="subHeader-is">IS</span>
-          <h3 class="subheader">The Journey</h3>
-        </div>
-        <p>On December 10th 2022</p>
-        <p>at Wintree City Resort Chiang Mai</p>
-      </div>
-    </div>
-  </div>
-</div> -->
 <div>
    <video width="100%" preload="none" autoplay loop>
       <source id="video_01" src="/assets/videos/video01.mp4" type="video/mp4" />
@@ -39,7 +21,9 @@
          </div>
          <div class="secondSection_image col-sm-12 col-lg-6 d-flex justify-content-center">
             <img src="../assets/images/0611_BetterTogether7863_edit.jpg" alt="" />
-            <div class="text_onimg"><h3 class="text_img">Welcome</h3></div>
+            <div class="text_onimg">
+               <h3 class="text_img">Welcome</h3>
+            </div>
          </div>
       </div>
    </div>
@@ -50,35 +34,15 @@
          <div class="header_imgslide">#NEXT_STATION_IS</div>
       </div>
       <!-- <a target="_blank" href="https://goo.gl/maps/mFZzeGujnEvJSJnt7">dasdasd </a> -->
-      <swiper
-         [slidesPerView]="3"
-         [spaceBetween]="30"
-         [pagination]="{
+      <swiper [slidesPerView]="3" [spaceBetween]="30" [pagination]="{
             clickable: true
-         }"
-      >
-         <ng-template swiperSlide
-            ><img
-               class="img_swiper"
-               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwCySt7uhIB7ij_M5mH5Kwvi6HLkJuaHkK-w&usqp=CAU" /></ng-template
-         ><ng-template swiperSlide
-            ><img
-               class="img_swiper"
-               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwCySt7uhIB7ij_M5mH5Kwvi6HLkJuaHkK-w&usqp=CAU" /></ng-template
-         ><ng-template swiperSlide
-            ><img
-               class="img_swiper"
-               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwCySt7uhIB7ij_M5mH5Kwvi6HLkJuaHkK-w&usqp=CAU" /></ng-template
-         ><ng-template swiperSlide
-            ><img
-               class="img_swiper"
-               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwCySt7uhIB7ij_M5mH5Kwvi6HLkJuaHkK-w&usqp=CAU" /></ng-template
-         ><ng-template swiperSlide
-            ><img class="img_swiper" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwCySt7uhIB7ij_M5mH5Kwvi6HLkJuaHkK-w&usqp=CAU"
-         /></ng-template>
-         <ng-template swiperSlide
-            ><img class="img_swiper" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwCySt7uhIB7ij_M5mH5Kwvi6HLkJuaHkK-w&usqp=CAU"
-         /></ng-template>
+         }">
+         <ng-template swiperSlide><img class="img_swiper" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwCySt7uhIB7ij_M5mH5Kwvi6HLkJuaHkK-w&usqp=CAU" /></ng-template>
+         <ng-template swiperSlide><img class="img_swiper" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwCySt7uhIB7ij_M5mH5Kwvi6HLkJuaHkK-w&usqp=CAU" /></ng-template>
+         <ng-template swiperSlide><img class="img_swiper" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwCySt7uhIB7ij_M5mH5Kwvi6HLkJuaHkK-w&usqp=CAU" /></ng-template>
+         <ng-template swiperSlide><img class="img_swiper" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwCySt7uhIB7ij_M5mH5Kwvi6HLkJuaHkK-w&usqp=CAU" /></ng-template>
+         <ng-template swiperSlide><img class="img_swiper" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwCySt7uhIB7ij_M5mH5Kwvi6HLkJuaHkK-w&usqp=CAU" /></ng-template>
+         <ng-template swiperSlide><img class="img_swiper" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwCySt7uhIB7ij_M5mH5Kwvi6HLkJuaHkK-w&usqp=CAU" /></ng-template>
       </swiper>
    </div>
 </div>
@@ -92,19 +56,19 @@
          <img class="img_map" src="assets/images/map.png" (click)="location()" />
       </div>
       <div class="row mt-4" style="width: 60%">
-         <div class="col-2">
+         <div class="col-lg-2 col-12">
             <h5 style="color: white; margin-top: 15px">SCHEDULE</h5>
          </div>
          <div class="col-1 border-left"></div>
-         <div class="col-3">
+         <div class="col-lg-3 col-12">
             <h5 style="color: white">Engagement</h5>
             <p class="location-text">13.00-15.00 น.</p>
          </div>
-         <div class="col-3">
+         <div class="col-lg-3 col-12">
             <h5 style="color: white">Caremony</h5>
             <p class="location-text">13.00-15.00 น.</p>
          </div>
-         <div class="col-3">
+         <div class="col-lg-3 col-12">
             <h5 style="color: white">After Party</h5>
             <p class="location-text">13.00-15.00 น.</p>
          </div>
@@ -119,147 +83,95 @@
       <p class="suptextthai">*รบกวนกรอกแบบสอบถาม เพื่อทางทีมงานจะได้จัดที่นั่งให้เหมาะสมกับทุกท่าน</p>
    </div>
    <div class="row col-11 justify-content-center">
-      <div class="col-6">
-         <div class="img_checkin col-sm-12 col-lg-6 d-flex justify-content-center" style="border-radius: 50% !important">
-            <!-- <img
-          src="/assets/images/0611_BetterTogether7879_edit.jpg"
-          style="
-            border-top-right-radius: 30%;
-            border-bottom-right-radius: 30%;
-            border-top-left-radius: 30%;
-            border-bottom-left-radius: 30%;
-            overflow: hidden;
-          "
-        /> -->
+      <div class="col-lg-6 col-12 content_img">
+         <div class="d-flex justify-content-center" style="margin-left: 20px;">
+            <img class="img_checkin" src="/assets/images/1.png" />
          </div>
-
-         <h5 class="head_color_primary">DRESS CODE</h5>
-         <div>
-            <div class="col-4">
-               <div style="position: relative">
-                  <div style="position: absolute">
-                     <span class="dot2"></span>
+         <div class="pt-3 d-flex justify-content-center">
+            <h5 class="head_color_primary">DRESS CODE</h5>
+            <div style="position: relative" class="mt-5">
+               <div class="col-12 col-lg-4">
+                  <div style="position: relative">
+                     <div style="position: absolute">
+                        <span class="dot2"></span>
+                     </div>
+                     <div style="position: absolute; right: 70px; top: 8px">
+                        <span class="color ml-5">Being</span>
+                     </div>
                   </div>
-                  <div style="position: absolute; right: 70px; top: 8px">
-                     <span class="color ml-5">Being</span>
+               </div>
+               <div class="col-12 col-lg-4">
+                  <div style="position: relative; top: 60px">
+                     <div style="position: absolute">
+                        <span class="dot1"></span>
+                     </div>
+                     <div style="position: absolute; right: 66px; top: 8px">
+                        <span class="color ml-5">Brown</span>
+                     </div>
                   </div>
                </div>
             </div>
-            <div class="col-4">
-               <div style="position: relative; top: 60px">
-                  <div style="position: absolute">
-                     <span class="dot1"></span>
-                  </div>
-                  <div style="position: absolute; right: 66px; top: 8px">
-                     <span class="color ml-5">Brown</span>
-                  </div>
-               </div>
-            </div>
-            <!-- <p class="color"><span class="dot1"></span>Being</p>
-        <p class="color"><span class="dot2"></span>Brown</p> -->
          </div>
       </div>
-      <div class="col-6">
+      <div class="col-lg-6 col-12" style="position: relative; display:block">
          <div class="col-12 margin-list">
             <label>ชื่อ-สกุล</label>
             <input class="form-control" type="text" />
          </div>
          <div class="row margin-list">
-            <div class="col-8">
+            <div class="col-12 col-lg-8">
                <label>ชื่อเล่น</label>
                <input class="form-control" type="text" />
             </div>
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
                <label>จำนวนผู้ติดตาม</label>
                <input class="form-control" type="text" />
             </div>
          </div>
          <div class="row margin-list" style="margin-left: 10">
             <label>ความสัมพันธ์กับบ่าว-สาว</label>
-            <div class="col-6">
+            <div class="col-lg-6 col-12">
                <div class="form-check">
-                  <input
-                     class="form-check-input"
-                     type="checkbox"
-                     value=""
-                     id="flexCheckDefault"
-                     (change)="checkrelation('1')"
-                     [checked]="relation == 1"
-                  />
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" (change)="checkrelation('1')" [checked]="relation == 1" />
                   <label class="form-check-label" for="flexCheckDefault"> ญาติเจ้าบ่าว </label>
                </div>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-12">
                <div class="form-check">
-                  <input
-                     class="form-check-input"
-                     type="checkbox"
-                     value=""
-                     id="flexCheckDefault"
-                     (change)="checkrelation('2')"
-                     [checked]="relation == 2"
-                  />
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" (change)="checkrelation('2')" [checked]="relation == 2" />
                   <label class="form-check-label" for="flexCheckDefault"> ญาติเจ้าสาว </label>
                </div>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-12">
                <div class="form-check">
-                  <input
-                     class="form-check-input"
-                     type="checkbox"
-                     value=""
-                     id="flexCheckDefault"
-                     (change)="checkrelation('3')"
-                     [checked]="relation == 3"
-                  />
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" (change)="checkrelation('3')" [checked]="relation == 3" />
                   <label class="form-check-label" for="flexCheckDefault">
                      เพื่อนเจ้าบ่าว
                      <p class="labelcheckbox">(ประถม-มัธยม)</p>
                   </label>
                </div>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-12">
                <div class="form-check">
-                  <input
-                     class="form-check-input"
-                     type="checkbox"
-                     value=""
-                     id="flexCheckDefault"
-                     (change)="checkrelation('4')"
-                     [checked]="relation == 4"
-                  />
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" (change)="checkrelation('4')" [checked]="relation == 4" />
                   <label class="form-check-label" for="flexCheckDefault">
                      เพื่อนเจ้าสาว
                      <p class="labelcheckbox">(ประถม-มัธยม)</p>
                   </label>
                </div>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-12">
                <div class="form-check">
-                  <input
-                     class="form-check-input"
-                     type="checkbox"
-                     value=""
-                     id="flexCheckDefault"
-                     (change)="checkrelation('5')"
-                     [checked]="relation == 5"
-                  />
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" (change)="checkrelation('5')" [checked]="relation == 5" />
                   <label class="form-check-label" for="flexCheckDefault">
                      ที่ทำงาน
                      <p class="labelcheckbox">(เจ้าบ่าว)</p>
                   </label>
                </div>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-12">
                <div class="form-check">
-                  <input
-                     class="form-check-input"
-                     type="checkbox"
-                     value=""
-                     id="flexCheckDefault"
-                     (change)="checkrelation('6')"
-                     [checked]="relation == 6"
-                  />
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" (change)="checkrelation('6')" [checked]="relation == 6" />
                   <label class="form-check-label" for="flexCheckDefault">
                      ที่ทำงาน
                      <p class="labelcheckbox">(เจ้าสาว)</p>
@@ -284,13 +196,13 @@
          </div>
          <div class="row margin-list" style="margin-left: 10">
             <label> คุณสะดวกมาร่วมงานช่วงไหนบ้าง </label>
-            <div class="col-6">
+            <div class="col-12 col-lg-6">
                <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
                   <label class="form-check-label" for="flexCheckChecked"> งานพิธี </label>
                </div>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-lg-6">
                <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
                   <label class="form-check-label" for="flexCheckChecked"> งานเลี้ยงฉลอง </label>
