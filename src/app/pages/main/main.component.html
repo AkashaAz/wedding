@@ -1,0 +1,246 @@
+<div>
+    <video width="100%" playsinline loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true">
+       <source id="video_01" src="/assets/videos/video01.mp4" type="video/mp4" />
+    </video>
+ </div>
+ <div class="introduction">
+    <div class="container">
+       <div class="introduction_contents">
+          <div class="col-sm-12 col-lg-6">
+             <div class="header_two">WARM</div>
+             <div class="header_two">WELCOME</div>
+             <div class="header_two">AND ENJOY</div>
+             <div class="underline"></div>
+             <p>
+                Hello our lovely guests,
+             </p>
+             <p>We would love to have </p>
+             <p>you guys on our special day.</p>
+             <p class="mt-5">Love and Miss U so bad</p>
+             <p>Matee & Saowanee</p>
+          </div>
+          <div class="secondSection_image col-sm-12 col-lg-6 d-flex justify-content-center">
+             <img src="../assets/images/0611_BetterTogether7863_edit.jpg" alt="" />
+             <div class="text_onimg">
+                <h3 class="text_img">Welcome</h3>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>
+ <div class="gallery">
+    <div class="container">
+       <div class="d-flex justify-content-center">
+          <div class="header_imgslide">#NEXT_STATION_IS</div>
+       </div>
+       <!-- <a target="_blank" href="https://goo.gl/maps/mFZzeGujnEvJSJnt7">dasdasd </a> -->
+       <swiper [slidesPerView]="3" [spaceBetween]="30" [pagination]="{
+             clickable: true
+          }">
+          <ng-template swiperSlide><img class="img_swiper" src="assets/Resize_Photo/1.jpg" /></ng-template>
+          <ng-template swiperSlide><img class="img_swiper" src="assets/Resize_Photo/2.jpg" /></ng-template>
+          <ng-template swiperSlide><img class="img_swiper" src="assets/Resize_Photo/3.jpg" /></ng-template>
+          <ng-template swiperSlide><img class="img_swiper" src="assets/Resize_Photo/4.jpg" /></ng-template>
+          <ng-template swiperSlide><img class="img_swiper" src="assets/Resize_Photo/5.jpg" /></ng-template>
+          <ng-template swiperSlide><img class="img_swiper" src="assets/Resize_Photo/6.jpg" /></ng-template>
+          <ng-template swiperSlide><img class="img_swiper" src="assets/Resize_Photo/7.jpg" /></ng-template>
+          <ng-template swiperSlide><img class="img_swiper" src="assets/Resize_Photo/8.jpg" /></ng-template>
+          <ng-template swiperSlide><img class="img_swiper" src="assets/Resize_Photo/10.jpg" /></ng-template>
+          <ng-template swiperSlide><img class="img_swiper" src="assets/Resize_Photo/11.jpg" /></ng-template>
+       </swiper>
+    </div>
+ </div>
+ <div class="location">
+    <div class="container d-flex flex-column align-items-center">
+       <div class="header" style="color: #fbfbfb">LOCATION</div>
+       <div class="location_line"></div>
+       <div class="location_detail">
+          <p class="location-text">Wintree City Resort Chiang Mai</p>
+          <p class="location-text">72 Chiangmai-Lampang Road, Chiangmai city, Chiangmai</p>
+          <img class="img_map" src="assets/images/map.png" (click)="location()" />
+       </div>
+       <div class="row mt-4" style="width: 60%">
+          <div class="col-lg-2 col-12">
+             <h5 style="color: white; margin-top: 15px">SCHEDULE</h5>
+          </div>
+          <div class="col-1 border-left"></div>
+          <div class="col-lg-3 col-12">
+             <h5 style="color: white">Engagement</h5>
+             <p class="location-text">13.09-15.00 น.</p>
+          </div>
+          <div class="col-lg-3 col-12">
+             <h5 style="color: white">Caremony</h5>
+             <p class="location-text">18.00-21.00 น.</p>
+          </div>
+          <div class="col-lg-3 col-12">
+             <h5 style="color: white">After Party</h5>
+             <p class="location-text">21.00-24.00 น.</p>
+          </div>
+       </div>
+    </div>
+ </div>
+ <div class="checkIn">
+    <div class="container d-flex justify-content-center">
+       <div class="header">CHECK IN</div>
+    </div>
+    <div class="container d-flex justify-content-center mb-5">
+       <p class="suptextthai">*รบกวนกรอกแบบสอบถาม เพื่อทางทีมงานจะได้จัดที่นั่งให้เหมาะสมกับทุกท่าน</p>
+    </div>
+    <div class="row col-11 justify-content-center">
+       <div class="col-lg-6 col-12 content_img">
+          <div class="d-flex justify-content-center" style="margin-left: 20px;">
+             <img class="img_checkin" src="/assets/images/1.png" />
+          </div>
+          <div class="pt-3 d-flex justify-content-center">
+             <h5 class="head_color_primary">DRESS CODE</h5>
+             <div style="position: relative" class="mt-5">
+                <div class="col-12 col-lg-4">
+                   <div style="position: relative">
+                      <div style="position: absolute">
+                         <span class="dot2"></span>
+                      </div>
+                      <div style="position: absolute; right: 70px; top: 8px">
+                         <span class="color ml-5">Beige</span>
+                      </div>
+                   </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                   <div style="position: relative; top: 60px">
+                      <div style="position: absolute">
+                         <span class="dot1"></span>
+                      </div>
+                      <div style="position: absolute; right: 66px; top: 8px">
+                         <span class="color ml-5">Brown</span>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+       <div class="col-lg-6 col-12" style="position: relative; display:block">
+          <div class="col-12 margin-list">
+             <label>ชื่อ-สกุล</label>
+             <input class="form-control" type="text" [(ngModel)]="name" />
+          </div>
+          <div class="row margin-list">
+             <div class="col-12 col-lg-8">
+                <label>ชื่อเล่น</label>
+                <input class="form-control" type="text" [(ngModel)]="subname" />
+             </div>
+             <div class="col-12 col-lg-4">
+                <label>จำนวนผู้ติดตาม</label>
+                <input class="form-control" type="text" [(ngModel)]="count" />
+             </div>
+          </div>
+          <div class="row margin-list" style="margin-left: 10">
+             <label>ความสัมพันธ์กับบ่าว-สาว</label>
+             <div class="col-lg-6 col-12">
+                <div class="form-check">
+                   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" (change)="checkrelation('ญาติเจ้าบ่าว')" [checked]="relation == 'ญาติเจ้าบ่าว'" />
+                   <label class="form-check-label" for="flexCheckDefault"> ญาติเจ้าบ่าว </label>
+                </div>
+             </div>
+             <div class="col-lg-6 col-12">
+                <div class="form-check">
+                   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" (change)="checkrelation('ญาติเจ้าสาว')" [checked]="relation == 'ญาติเจ้าสาว'" />
+                   <label class="form-check-label" for="flexCheckDefault"> ญาติเจ้าสาว </label>
+                </div>
+             </div>
+             <div class="col-lg-6 col-12">
+                <div class="form-check">
+                   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" (change)="checkrelation('เพื่อนเจ้าบ่าว')" [checked]="relation == 'เพื่อนเจ้าบ่าว'" />
+                   <label class="form-check-label" for="flexCheckDefault">
+                      เพื่อนเจ้าบ่าว
+                   </label>
+                </div>
+             </div>
+             <div class="col-lg-6 col-12">
+                <div class="form-check">
+                   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" (change)="checkrelation('เพื่อนเจ้าสาว')" [checked]="relation == 'เพื่อนเจ้าสาว'" />
+                   <label class="form-check-label" for="flexCheckDefault">
+                      เพื่อนเจ้าสาว
+                   </label>
+                </div>
+             </div>
+             <div class="col-lg-6 col-12">
+                <div class="form-check">
+                   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" (change)="checkrelation('ที่ทำงาน(เจ้าบ่าว)')" [checked]="relation == 'ที่ทำงาน(เจ้าบ่าว)'" />
+                   <label class="form-check-label" for="flexCheckDefault">
+                      ที่ทำงาน
+                      <p class="labelcheckbox">(เจ้าบ่าว)</p>
+                   </label>
+                </div>
+             </div>
+             <div class="col-lg-6 col-12">
+                <div class="form-check">
+                   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" (change)="checkrelation('ที่ทำงาน(เจ้าสาว)')" [checked]="relation == 'ที่ทำงาน(เจ้าสาว)'" />
+                   <label class="form-check-label" for="flexCheckDefault">
+                      ที่ทำงาน
+                      <p class="labelcheckbox">(เจ้าสาว)</p>
+                   </label>
+                </div>
+             </div>
+          </div>
+          <div class="row margin-list" style="margin-left: 10">
+             <label>คุณสะดวกมาร่วมงานหรือไม่?</label>
+             <div class="col-6">
+                <div class="form-check">
+                   <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" [checked]="checkgo1" (change)="checkgofunc1()" />
+                   <label class="form-check-label" for="flexCheckChecked"> สะดวก </label>
+                </div>
+             </div>
+             <div class="col-6">
+                <div class="form-check">
+                   <input (change)="checkgofunc2()" [checked]="checkgo2" class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                   <label class="form-check-label" for="flexCheckChecked"> ไม่สะดวก </label>
+                </div>
+             </div>
+          </div>
+          <div class="row margin-list" style="margin-left: 10">
+             <label> คุณสะดวกมาร่วมงานช่วงไหนบ้าง </label>
+             <div class="col-12 col-lg-6">
+                <div class="form-check">
+                   <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" [(ngModel)]="eventTime1" />
+                   <label class="form-check-label" for="flexCheckChecked"> งานพิธี </label>
+                </div>
+             </div>
+             <div class="col-12 col-lg-6">
+                <div class="form-check">
+                   <input class="form-check-input" type="checkbox" value="" [(ngModel)]="eventTime2" id="flexCheckChecked" />
+                   <label class="form-check-label" for="flexCheckChecked"> งานเลี้ยงฉลอง </label>
+                </div>
+             </div>
+          </div>
+          <div class="col-12">
+             <label class="mb-3"> อวยพรพวกเราได้นะ </label>
+             <div class="form-floating">
+                <textarea class="form-control" [(ngModel)]="comment" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Comments</label>
+             </div>
+          </div>
+          <div class="mt-5">
+             <!-- (click)="add()" -->
+             <button type="button" class="btn btn-primary" (click)="add()" data-bs-toggle="modal" data-bs-target="#exampleModal">SUBMIT</button>
+          </div>
+       </div>
+    </div>
+ </div>
+ <div class="footer">
+    <div class="container">
+       <div></div>
+       <div></div>
+    </div>
+ </div>
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+       <div class="modal-content">
+          <div class="modal-body textmodal">
+             <p class="modaltext">ขอขอบคุณทุกๆคำอวยพร</p>
+             <p class="modaltext">หากมีโอกาส หวังว่าจะได้พบกันนะคะ</p>
+            <div class="mt-3 mb-2">
+             <button type="button" class="btn btn-primary1" data-bs-dismiss="modal">กลับไปหน้าหลัก</button>
+            </div>
+          </div>
+       </div>
+    </div>
+ </div>

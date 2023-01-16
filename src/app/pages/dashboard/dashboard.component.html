@@ -1,0 +1,27 @@
+<div id="print-section"> 
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">ชื่อสกุล</th>
+            <th scope="col">ชื่อเล่น</th>
+            <th scope="col">ความสัมพันธ์</th>
+            <!-- <th scope="col">จำนวนคนที่มา</th>
+            <th class="col-1">มา/ไม่มา</th>
+            <th class="col-1">มาช่วงไหน</th> -->
+            <th class="col-3">comment</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of list">
+            <td>{{item.name}}</td>
+            <td>{{item.subname}}</td>
+            <td>{{item.relation}}</td>
+            <!-- <td>{{item.count}}</td>
+            <td>{{item.acceptEvent}}</td>
+            <td>{{item.event1}} {{item.event2}}</td> -->
+            <td>{{item.comment}}</td>
+        </tr>
+    </tbody>
+</table>
+<div>
+<button printSectionId="print-section" ngxPrint>print</button> 
